@@ -57,3 +57,6 @@ class Server:
             "page": page,
             "data": self.get_page(page, page_size),
             "next_page": next_page,
+            'prev_page': prev_page,
+            'total_pages': total_pages
+        }
