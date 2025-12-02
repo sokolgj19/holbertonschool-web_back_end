@@ -2,8 +2,9 @@
 """Simple helper function for pagination index calculation."""
 from typing import Tuple
 
-def index_range(page: int, page_size: int) -> Tuple[int, int]:
-    """Return a tuple (start, end) for pagination based on page and page_size."""
+
+def index_range(page, page_size):
+    """Return a tuple of (start, end) indexes for pagination."""
     start = (page - 1) * page_size
     end = start + page_size
     return (start, end)
